@@ -117,7 +117,7 @@ p {
 
 @media screen and (min-height:1100px) {
   html {
-    font-size: 2.2rem;
+    font-size: 2rem;
     height: 100%;
     background-size: auto 120%;
   }
@@ -140,11 +140,10 @@ p {
   }
   section .container {
     height: max-content;
-    padding: 5% 0 5% 0;
   }
   #imgwrapper {
     width: 50%;
-    height: 50%;
+    height: 18vh;
     margin:auto;
   }
   .content {
