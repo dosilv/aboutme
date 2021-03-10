@@ -35,6 +35,7 @@ br {
 nav.container {
   table-layout: fixed;
   height: 2rem;
+  font-size: 1.2rem;
   color: #eba196;
   text-shadow: 0.1em 0.08em 0 slategrey;
 }
@@ -67,6 +68,10 @@ section .container {
   vertical-align: middle;
   margin: auto;
   text-align: center;
+}
+
+#imgwrapper img {
+  display: none;
 }
 
 #imgwrapper:hover {
@@ -146,6 +151,10 @@ p {
     width: 50%;
     height: 50%;
     margin:auto;
+  }
+  #imgwrapper img {
+    height: 100%;
+    visibility: hidden;
   }
   .content {
     width: 70%;
