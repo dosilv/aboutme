@@ -80,8 +80,7 @@ section .container {
 
 .content {
   display: table-cell;
-  width: 60%;
-  padding: 0% 6% 0 0;
+  width: 70%;
   vertical-align: middle;
   color: darkslategrey;
 }
@@ -105,15 +104,16 @@ p {
 }
 
 .content img {
-  display: inline;
-  float: left;
-  width: 30px;
-  height: 30px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+  vertical-align: middle;
 }
 
 #centeralign {
   width: fit-content;
+  max-width: 90%;
   margin: auto;
 }
 
