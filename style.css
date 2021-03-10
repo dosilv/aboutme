@@ -1,16 +1,21 @@
 html {
-  background-color: #FEE074;
+  /* background-color: #FEE074; */
+  background-image: url("./icecream.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
+
 body {
   width: 70%;
-  min-width: 750px;
+  min-width: 800px;
   margin: 8% auto auto auto;
-
 }
+
 header h1 {
-  color: #726A95;
+  color: #eba196;
+  text-shadow: 0.1rem 0.1rem 0 slategrey;
   font-weight: bold;
   text-align: center;
 }
@@ -24,7 +29,9 @@ header h1 {
 nav.container {
   table-layout: fixed;
   height: 2rem;
-  color: #726A95;
+  color: #eba196;
+  text-shadow: 0.08em 0.08em 0 slategrey;
+  /* color: #726A95; -purple */
   /* display: -webkit-flex;
   display: -ms-flexbox;
   justify-content: space-evenly;
@@ -41,7 +48,8 @@ nav .item {
 
 section {
   height: 20rem;
-  background-color: #726A95;
+  background-color: #eba196;
+  box-shadow: 0.1rem 0.1rem 0 slategrey;
 }
 
 #imgwrapper {
@@ -62,13 +70,40 @@ img {
   box-sizing: border-box;
   padding: 5% 6% 0 6%;
   vertical-align: middle;
-  color:#FEE074;
+  color: darkslategrey;
 }
 
 #bold {
   font-weight: bolder;
   font-size: 1rem;
   background-color: #FEE074;
-  color: black;
   white-space: pre;
+}
+@media screen and (max-width:500px) {
+  html {
+    height: 100%;
+    background-size: auto 120%;
+  }
+  body {
+    width: 90%;
+    min-width: 90%;
+  }
+  nav .item {
+    font-size: 1.2rem;
+  }
+  section .container, #imgwrapper, .content {
+    display: block;
+  }
+  section {
+    height: auto;
+    padding: 5% 0 5% 0;
+  }
+  #imgwrapper {
+    width: 50%;
+    margin:auto;
+  }
+  .content {
+    width: 90%;
+    margin: auto;
+  }
 }
