@@ -5,6 +5,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: sans-serif;
+  line-height: 1.8;
 }
 
 
@@ -80,7 +81,7 @@ section .container {
 
 .content {
   display: table-cell;
-  width: 70%;
+  width: 80%;
   vertical-align: middle;
   color: darkslategrey;
 }
@@ -120,8 +121,8 @@ p {
 @media screen and (min-height:1100px) {
   html {
     font-size: 2.2rem;
-    height: 100%;
-    background-size: auto 120%;
+    width: 100%;
+    background-size: 300% auto;
   }
   body {
     width: 90%;
