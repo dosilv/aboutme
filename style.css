@@ -74,9 +74,9 @@ section .container {
 
 #imgwrapper:hover {
   background-image: url("./hover.png");
-  background-size: 70%;
+  background-size: 65%;
   background-repeat: no-repeat;
-  background-position: center 30%;
+  background-position: center 25%;
 }
 
 .content {
@@ -90,10 +90,6 @@ section .container {
   font-weight: bolder;
   font-size: 1rem;
   background-color: #FEE074;
-}
-
-p {
-  white-space: pre-wrap;
 }
 
 #small {
@@ -118,11 +114,11 @@ p {
   margin: auto;
 }
 
-/* #click {
+#click {
   font-family: cursive;
   position: relative;
-  top: -5%;
-} */
+  top: 5%;
+}
 
 @media screen and (min-height:1100px) {
   html {
@@ -162,7 +158,11 @@ p {
     height: 100%;
   }
   .content {
-    width: 75%;
+    width: 80%;
     margin: auto;
+  }
+  #click {
+    position: relative;
+    top: -5%;
   }
 }
