@@ -140,10 +140,11 @@ p {
   }
   section .container {
     height: max-content;
+    font-size: 1.2rem;
   }
   #imgwrapper {
     width: 50%;
-    height: 18vh;
+    height: 50%;
     margin:auto;
   }
   .content {
