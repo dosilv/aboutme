@@ -10,10 +10,11 @@ html {
 body {
   width: 70%;
   min-width: 800px;
-  margin: 8% auto auto auto;
+  margin: 5% auto auto auto;
 }
 
 header h1 {
+  font-size: 3em;
   color: #eba196;
   text-shadow: 0.1rem 0.1rem 0 slategrey;
   font-weight: bold;
@@ -79,14 +80,19 @@ img {
   background-color: #FEE074;
   white-space: pre;
 }
-@media screen and (min-height:1100px) {
+
+@media screen and (max-width: 500px) {
   html {
+    font-size: 2rem;
     height: 100%;
     background-size: auto 120%;
   }
   body {
     width: 90%;
     min-width: 90%;
+  }
+  h1 {
+    font-size: 4rem;
   }
   nav .item {
     font-size: 1.2rem;
@@ -103,7 +109,7 @@ img {
     margin:auto;
   }
   .content {
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
 }
