@@ -7,6 +7,9 @@ html {
   font-family: sans-serif;
 }
 
+p {
+  white-space: pre-wrap;
+}
 
 body {
   width: 70%;
@@ -60,7 +63,6 @@ section .container {
   height: 20rem;
   background-color: #eba196;
   box-shadow: 0.1rem 0.1rem 0 slategrey;
-  line-height: 1.8;
 }
 
 #imgwrapper {
@@ -115,10 +117,12 @@ section .container {
 }
 
 #click {
-  font-family: cursive;
+  font-family: 'Homemade Apple', cursive;
   position: relative;
   top: 5%;
 }
+
+
 
 @media screen and (min-height:1100px) {
   html {
@@ -163,6 +167,6 @@ section .container {
   }
   #click {
     position: relative;
-    top: -5%;
+    top: -20%;
   }
 }
