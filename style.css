@@ -70,9 +70,6 @@ section .container {
   text-align: center;
 }
 
-#imgwrapper img {
-  width: auto;
-}
 
 #imgwrapper:hover {
   background-image: url("./hover.png");
@@ -148,7 +145,7 @@ p {
     font-size: 1.2rem;
   }
   #imgwrapper {
-    height: 20vh;
+    height: 30vh;
     margin:auto;
   }
   #imgwrapper img {
