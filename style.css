@@ -73,7 +73,7 @@ section .container {
 
 #imgwrapper:hover {
   background-image: url("./hover.png");
-  background-size: 65%;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center 30%;
 }
@@ -146,6 +146,7 @@ p {
   }
   #imgwrapper {
     height: 30vh;
+    width: 80%;
     margin:auto;
   }
   #imgwrapper img {
