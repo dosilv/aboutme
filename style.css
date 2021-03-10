@@ -71,7 +71,7 @@ section .container {
 }
 
 #imgwrapper img {
-  display: none;
+  width: auto;
 }
 
 #imgwrapper:hover {
@@ -148,13 +148,12 @@ p {
     font-size: 1.2rem;
   }
   #imgwrapper {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     margin:auto;
   }
   #imgwrapper img {
     height: 100%;
-    visibility: hidden;
   }
   .content {
     width: 70%;
