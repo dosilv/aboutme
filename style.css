@@ -81,7 +81,7 @@ img {
   white-space: pre;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-height:1100px) {
   html {
     font-size: 2rem;
     height: 100%;
