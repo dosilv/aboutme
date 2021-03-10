@@ -79,7 +79,7 @@ img {
   background-color: #FEE074;
   white-space: pre;
 }
-@media screen and (max-width:500px) {
+@media screen and (min-height:1100px) {
   html {
     height: 100%;
     background-size: auto 120%;
