@@ -123,7 +123,7 @@ p {
 
 @media screen and (min-height:1100px) {
   html {
-    font-size: 2rem;
+    font-size: 2.5rem;
     height: 100%;
     background-size: auto 120%;
   }
@@ -149,6 +149,7 @@ p {
   }
   #imgwrapper {
     width: 50%;
+    height: 40%;
     margin:auto;
   }
   .content {
