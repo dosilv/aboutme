@@ -129,6 +129,7 @@ section .container {
   html {
     width: 100%;
     background-size: 300% auto;
+    font-size: 2rem;
   }
   body {
     width: 90%;
