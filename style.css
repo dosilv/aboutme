@@ -152,7 +152,7 @@ section .container {
     height: max-content;
     padding-bottom: 10%;
     margin-bottom: 10%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #imgwrapper {
     height: 30vh;
