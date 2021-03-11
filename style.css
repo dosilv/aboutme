@@ -4,7 +4,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 p {
@@ -18,7 +18,8 @@ body {
 }
 
 header h1 {
-  font-size: 3em;
+  font-family: 'Lobster', sans-serif;
+  font-size: 3.2em;
   color: #eba196;
   text-shadow: 0.15rem 0.1rem 0 slategrey;
   font-weight: bold;
