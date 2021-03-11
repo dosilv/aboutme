@@ -136,14 +136,14 @@ section .container {
     min-width: 90%;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
     margin-bottom: 0.5rem;
   }
   br {
     display: inline;
   }
   nav .item {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   section .container, #imgwrapper, .content {
     display: block;
