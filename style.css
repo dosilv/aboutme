@@ -127,7 +127,6 @@ section .container {
 
 @media screen and (min-height:1100px) {
   html {
-    font-size: 2.2rem;
     width: 100%;
     background-size: 300% auto;
   }
