@@ -162,7 +162,7 @@ section .container {
   #imgwrapper {
     width: 80%;
     margin:auto;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
   }
 
   #imgwrapper img {
@@ -174,5 +174,6 @@ section .container {
   }
   #click {
     position: relative;
+    top: -5px;
   }
 }
