@@ -154,7 +154,7 @@ section .container {
     display: block;
   }
   section .container {
-    /* height: max-content; */
+    height: max-content;
     padding-bottom: 10%;
     margin-bottom: 10%;
     font-size: 1rem;
