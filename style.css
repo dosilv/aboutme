@@ -153,6 +153,7 @@ section .container {
 .description {
   color: white;
   font-size: 2rem;
+  font-weight: border;
   position: absolute;
   bottom: 150%;
   left: 10%;
@@ -160,12 +161,12 @@ section .container {
   transition: all .35s;
 }
 
-.screen:hover .description {
-  bottom: 45%;
+.likes a:hover .description {
+  bottom: 40%;
   transition: all .35s;
 }
 
-a .screen::after {
+.likes a .screen::after {
   content: '';
   display: block;
   position: absolute;
@@ -227,5 +228,9 @@ a:hover .screen::after {
   #click {
     position: relative;
     top: -10px;
+  }
+  .description {
+    color: white;
+    font-size: 1rem;
   }
 }
