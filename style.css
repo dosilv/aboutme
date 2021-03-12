@@ -26,6 +26,17 @@ header h1 {
   text-align: center;
 }
 
+header h1 {
+  animation:pop 1s linear infinite alternate;
+}
+
+
+@keyframes pop {
+  0%{transform: scale(1, 1);}
+  50%{transform: scale(1.05, 1.05);}
+  0%{transform: scale(1.1, 1.1);}
+}
+
 br {
   display: none;
 }
