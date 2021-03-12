@@ -33,8 +33,8 @@ header h1 {
 
 @keyframes pop {
   0%{transform: scale(1, 1);}
-  50%{transform: scale(1.05, 1.05);}
-  0%{transform: scale(1.1, 1.1);}
+  50%{transform: scale(1.1, 1.1);}
+  0%{transform: scale(1.2, 1.2);}
 }
 
 br {
@@ -64,6 +64,12 @@ nav .item {
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
+  transition:all .35s;
+}
+
+nav .item:hover {
+  transform: translate(0, -20%);
+  transition:all .35s;
 }
 
 a {
@@ -79,28 +85,21 @@ section .container {
   height: 20rem;
   background-color: #eba196;
   box-shadow: 0.1rem 0.1rem 0 slategrey;
+  padding: 10% auto;
 }
 
 #imgwrapper {
   display: table-cell;
   width: 40%;
-  vertical-align: middle;
+  vertical-align: top;
   margin: auto;
   text-align: center;
-}
-
-
-#imgwrapper:hover {
-  background-image: url("./hover.png");
-  background-size: 65%;
-  background-repeat: no-repeat;
-  background-position: center 25%;
 }
 
 #imgwrapper img {
   width: 65%;
   position: relative;
-  top: 20px;
+  top: 25px;
 }
 
 .content {
@@ -143,9 +142,9 @@ section .container {
   position: relative;
 }
 
-.likes {
-  margin: 10% auto;
+.likes, .study {
   text-align: center;
+  margin: 10% auto;
 }
 
 .screen {
@@ -169,6 +168,8 @@ section .container {
   font-weight: border;
   position: absolute;
   bottom: 150%;
+  left:50%;
+  transform:translateX(-50%);
   z-index: 2;
   transition: all .35s;
   white-space: pre-wrap;
@@ -176,6 +177,11 @@ section .container {
 
 .likes a:hover .description {
   bottom: 40%;
+  transition: all .35s;
+}
+
+.likes a:hover .description#long {
+  bottom: 28%;
   transition: all .35s;
 }
 
@@ -191,13 +197,16 @@ section .container {
   background: rgba(50, 0, 0, 0.6);
   z-index: 1;
   opacity: 0;
-  transition:all .35s;
+  transition: all .35s;
 }
 
 a:hover .screen::after {
   opacity: 1;
 }
 
+.study img {
+  width: 25%;
+}
 
 @media screen and (min-height:1100px) {
   html {
@@ -233,10 +242,9 @@ a:hover .screen::after {
     margin:auto;
     margin-bottom: 10px;
   }
-
   .content {
     width: 80%;
-    margin: auto;
+    margin: 10% auto;
   }
   #click {
     position: relative;

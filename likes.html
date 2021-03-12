@@ -9,14 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <style>
-    #imgwrapper {
-      background-image: url("./likes.png");
-      background-size: 65%;
-      background-repeat: no-repeat;
-      background-position: center 25%;
-    }
-    </style>
     <title>Doeun World🎡</title>
   </head>
   <body>
@@ -32,7 +24,7 @@
     <section>
       <div class="container">
         <div class="item" id="imgwrapper">
-          <img src="./empty.png">
+          <img src="./likes.png" onmouseover="this.src='./hover.png'" onmouseout="this.src='./likes.png'"/>
           <p id="click">touch me, then I code!</p>
         </div>
         <div class="content">
@@ -41,38 +33,38 @@
               <p><span id="bold"> HOBBIES </span></p>
                 <a>
                   <div class="screen">
-                    <div class="description">music</div>
+                    <div class="description">Music</div>
                     <img src="./music.jpg" />
                   </div>
                 </a>
                 <a>
                   <div class="screen">
-                    <div class="description">movie</div>
+                    <div class="description">Movie</div>
                     <img src="./netflix.jpg" />
                   </div>
                 </a>
                 <a>
                   <div class="screen">
-                    <div class="description">travel</div>
+                    <div class="description">Travel</div>
                     <img src="./travel.jpg" />
                   </div>
                 </a>
               <p><span id="bold"> MOVIE </span></p>
               <a>
                 <div class="screen">
-                  <div class="description">marvel</div>
+                  <div class="description">Marvel</div>
                   <img src="./marvel.jpg" />
                 </div>
               </a>
               <a>
                 <div class="screen">
-                  <div class="description">mamma mia!</div>
+                  <div class="description" id="long">Mamma<br id="need" />mia!</div>
                   <img src="./mammamia.jpg" />
                 </div>
               </a>
               <a>
                 <div class="screen">
-                  <div class="description">tangled</div>
+                  <div class="description">Disney</div>
                   <img src="./tangled.jpg" />
                 </div>
               </a>
@@ -85,18 +77,18 @@
               </a>
               <a>
                 <div class="screen">
-                  <div class="description">girl group</div>
+                  <div class="description" id="long">K-pop<br id="need" />idol</div>
                   <img src="./girlgroup.png" />
                 </div>
               </a>
               <a>
                 <div class="screen">
-                  <div class="description">troye sivan</div>
+                  <div class="description" id="long">Troye<br id="need" />sivan</div>
                   <img src="./troye.jpg" />
                 </div>
               </a>
               <p><span id="bold"> FOOD </span></p>
-              <p>🍗🍰🥞🥐🍝🍣🍕🍔🍩🍪🧁🍫</p>
+              <p style="font-size: 1.5rem;">🍗🍰🥞🥐🍝🍣🍕🍔🍩🍪🧁🍫</p>
             </div>
           </div>
         </div>

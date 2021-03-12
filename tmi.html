@@ -9,14 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <style>
-    #imgwrapper {
-      background-image: url("./tmi.png");
-      background-size: 65%;
-      background-repeat: no-repeat;
-      background-position: center 25%;
-    }
-    </style>
     <title>Doeun World🎡</title>
   </head>
   <body>
@@ -32,16 +24,19 @@
     <section>
       <div class="container">
         <div class="item" id="imgwrapper">
-          <img src="./empty.png" />
+          <img src="./tmi.png" onmouseover="this.src='./hover.png'" onmouseout="this.src='./tmi.png'"/>
           <p id="click">touch me, then I code!</p>
         </div>
         <div class="content">
           <div id="centeralign">
-            <p><span id="bold"> MBTI </span> <span id="select">ENFP</span> <span id="small">(재기발랄한 활동가‍🎉)</span></p>
-            <p><span id="bold"> 탕수육 </span> 부먹 or <span id="select">찍먹</span></p>
-            <p><span id="bold"> 붕어빵 </span> 팥 or <span id="select">슈크림</span></p>
-            <p><span id="bold"> 민트초코 </span><span id="select"> 호 </span> or 불호</p>
-            <p><span id="bold"> 계절 </span> 여름 or <span id="select">겨울</span></p>
+            <div class="study">
+              <p><span id="bold"> WHAT I'M STUDYING </span></p>
+              <img src="./html.png" />
+              <img src="./css.png" />
+              <img src="./python.png" />
+              <p style="margin-top: 10%;"><span id="bold"> MY PROJECT </span></p>
+              <p>I'm working on it...</p>
+            </div>
           </div>
         </div>
       </div>
