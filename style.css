@@ -1,5 +1,4 @@
 html {
-  /* background-color: #FEE074; */
   background-image: url("./icecream.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,12 +23,8 @@ header h1 {
   text-shadow: 0.15rem 0.1rem 0 slategrey;
   font-weight: bold;
   text-align: center;
-}
-
-header h1 {
   animation:pop 1s linear infinite alternate;
 }
-
 
 @keyframes pop {
   0%{transform: scale(1, 1);}
@@ -44,7 +39,6 @@ br {
 br#need {
   display: block;
 }
-
 
 .container {
   display: table;
@@ -83,9 +77,9 @@ a {
 
 section .container {
   height: 20rem;
+  width: 100%;
   background-color: #eba196;
   box-shadow: 0.1rem 0.1rem 0 slategrey;
-  padding: 10% auto;
 }
 
 #imgwrapper {
@@ -239,7 +233,7 @@ a:hover .screen::after {
   }
   #imgwrapper {
     width: 80%;
-    margin:auto;
+    margin: auto;
     margin-bottom: 10px;
   }
   .content {
