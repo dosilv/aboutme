@@ -30,6 +30,10 @@ br {
   display: none;
 }
 
+br#need {
+  display: block;
+}
+
 
 .container {
   display: table;
@@ -109,7 +113,7 @@ section .container {
   font-weight: bolder;
 }
 
-.content img {
+.content p img {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -128,6 +132,57 @@ section .container {
   position: relative;
 }
 
+.likes {
+  margin: 10% auto;
+  text-align: center;
+}
+
+.screen {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen img {
+  width: 95%;
+  border-radius: 20%;
+  box-shadow: 0.1rem 0.1rem 0 darkslategrey;
+}
+
+.description {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 150%;
+  left: 10%;
+  z-index: 2;
+  transition: all .35s;
+}
+
+.screen:hover .description {
+  bottom: 45%;
+  transition: all .35s;
+}
+
+a .screen::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 2.5%;
+  top: 0;
+  width: 95%;
+  height: 97%;
+  border-radius: 20%;
+  background: rgba(50, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition:all .35s;
+}
+
+a:hover .screen::after {
+  opacity: 1;
+}
 
 
 @media screen and (min-height:1100px) {
@@ -163,9 +218,6 @@ section .container {
     width: 80%;
     margin:auto;
     margin-bottom: 10px;
-  }
-
-  #imgwrapper img {
   }
 
   .content {
