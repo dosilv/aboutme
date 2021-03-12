@@ -14,7 +14,10 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 5% auto auto auto;
+  -ms-overflow-style: none;
 }
+
+::-webkit-scrollbar { display: none; }
 
 header h1 {
   font-family: 'Lobster', sans-serif;
