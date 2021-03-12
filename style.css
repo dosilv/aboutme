@@ -82,6 +82,12 @@ section .container {
   background-position: center 25%;
 }
 
+#imgwrapper img {
+  width: 65%;
+  position: relative;
+  top: 20px;
+}
+
 .content {
   display: table-cell;
   width: 80%;
@@ -120,7 +126,6 @@ section .container {
 #click {
   font-family: 'Homemade Apple', cursive;
   position: relative;
-  top: 5%;
 }
 
 
@@ -159,9 +164,10 @@ section .container {
     width: 80%;
     margin:auto;
   }
+  
   #imgwrapper img {
-    height: 100%;
   }
+
   .content {
     width: 80%;
     margin: auto;
