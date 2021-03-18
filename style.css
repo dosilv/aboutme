@@ -215,7 +215,7 @@ a:hover .screen::after {
   }
   h1 {
     font-size: 4.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
   }
   br {
     display: inline;
@@ -228,7 +228,7 @@ a:hover .screen::after {
   }
   section .container {
     height: max-content;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     margin-bottom: 10%;
     font-size: 1rem;
   }
