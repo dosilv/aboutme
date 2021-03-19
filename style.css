@@ -101,7 +101,7 @@ section .container {
 .content {
   width: 60%;
   vertical-align: middle;
-  color: darkslategrey;
+  color: #303030;
   margin: auto;
 }
 
@@ -201,6 +201,13 @@ a:hover .screen::after {
 
 .study img {
   width: 25%;
+}
+
+#copyright {
+  text-align: right;
+  position: relative;
+  top: -4%;
+  padding-bottom: 2%;
 }
 
 @media screen and (min-height:1100px) {
