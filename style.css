@@ -197,12 +197,11 @@ a:hover .screen::after {
 }
 
 header h1 {
-  animation:pop 1s linear infinite alternate;
+  animation:pop 1s ease-in-out 1s infinite alternate;
 }
 
 @keyframes pop {
 0%{transform: scale(1, 1);}
-50%{transform: scale(1.1, 1.1);}
 100%{transform: scale(1.2, 1.2);}
 }
 
