@@ -26,13 +26,6 @@ header h1 {
   text-shadow: 0.15rem 0.1rem 0 slategrey;
   font-weight: bold;
   text-align: center;
-  animation:pop 1s linear infinite alternate;
-}
-
-@keyframes pop {
-  0%{transform: scale(1, 1);}
-  50%{transform: scale(1.1, 1.1);}
-  100%{transform: scale(1.2, 1.2);}
 }
 
 br {
@@ -203,11 +196,14 @@ a:hover .screen::after {
   width: 25%;
 }
 
-#copyright {
-  text-align: right;
-  position: relative;
-  top: -4%;
-  padding-bottom: 2%;
+header h1 {
+  animation:pop 1s linear infinite alternate;
+}
+
+@keyframes pop {
+0%{transform: scale(1, 1);}
+50%{transform: scale(1.1, 1.1);}
+100%{transform: scale(1.2, 1.2);}
 }
 
 @media screen and (min-height:1100px) {
