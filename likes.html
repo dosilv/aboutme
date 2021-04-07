@@ -27,9 +27,18 @@
           <img src="./likes.png" onmouseover="this.src='./hover.png'" onmouseout="this.src='./likes.png'"/>
           <p id="click">touch me, then I code!</p>
         </div>
-        <div class="content">
+        <div class="content" id="likescontent">
           <div id="centeralign">
-            <div class="likes">
+
+              <figure>
+                <div class="likes">
+                <div class="button-container">
+                  <input class="prev" type="image" src="./prev.png" onclick="seePrev()">
+                  <input class="next" type="image" src="./next.png" onclick="seeNext()">
+                </div>
+                <div class="likes-container">
+                  <ul class="slider">
+              <li class="item">
               <p><span id="bold"> HOBBIES </span></p>
                 <a>
                   <div class="screen">
@@ -49,6 +58,8 @@
                     <img src="./travel.jpg" />
                   </div>
                 </a>
+              </li>
+              <li class="item">
               <p><span id="bold"> MOVIE </span></p>
               <a>
                 <div class="screen">
@@ -68,6 +79,8 @@
                   <img src="./tangled.jpg" />
                 </div>
               </a>
+            </li>
+            <li class="item">
               <p><span id="bold"> MUSIC </span></p>
               <a>
                 <div class="screen">
@@ -87,9 +100,15 @@
                   <img src="./troye.jpg" />
                 </div>
               </a>
+            </li>
+            <li class="item">
               <p><span id="bold"> FOOD </span></p>
               <p style="font-size: 1.5rem;">🍗🍰🥞🥐🍝🍣🍕🍔🍩🍪🧁🍫</p>
-            </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </figure>
           </div>
         </div>
       </div>
@@ -98,5 +117,16 @@
     </aside>
     <footer>
     </footer>
+    <script type="text/javascript">
+      let i = 0;
+      function seePrev(){
+        if(i>0) {i -= 1}
+        document.querySelector('ul.slider').style.left = -(100*i)+'%';
+      }
+      function seeNext(){
+        if(i<=1) {i += 1}
+        document.querySelector('ul.slider').style.left = -(100*i)+'%';
+      }
+    </script>
   </body>
 </html>

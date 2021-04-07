@@ -11,7 +11,7 @@ p {
 }
 
 body {
-  width: 70%;
+  width: 1100px;
   min-width: 800px;
   margin: 5% auto auto auto;
   -ms-overflow-style: none;
@@ -74,13 +74,14 @@ a {
 section .container {
   height: fit-content;
   width: 100%;
+  min-height: 400px;
   background-color: #eba196;
   box-shadow: 0.1rem 0.1rem 0 slategrey;
   padding: 1% 0;
 }
 
 #imgwrapper {
-  width: 40%;
+  width: 35%;
   vertical-align: top;
   text-align: center;
 }
@@ -88,14 +89,18 @@ section .container {
 #imgwrapper img {
   width: 65%;
   position: relative;
-  top: 25px;
+  top: 50px;
 }
 
 .content {
-  width: 60%;
+  width: 65%;
   vertical-align: middle;
   color: #303030;
   margin: auto;
+}
+
+#likescontent {
+  margin: 2% 2%;
 }
 
 #bold {
@@ -122,13 +127,14 @@ section .container {
 
 #centeralign {
   width: fit-content;
-  max-width: 90%;
+  max-width: 85%;
   margin: auto;
 }
 
 #click {
   font-family: 'Homemade Apple', cursive;
   position: relative;
+  top: 25px;
 }
 
 .likes, .study {
@@ -200,12 +206,62 @@ header h1 {
   animation:pop 1s ease-in-out 0s infinite alternate;
 }
 
+figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  top: 2rem;
+}
+
+div.likes-container {
+  width: 35rem;
+  height: 280px;
+  margin-top: 2%;
+  overflow: hidden;
+  position: relative;
+}
+
+div.button-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+ul.slider {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  left: 0%;
+  transition: left 0.25s;
+}
+
+li.item {
+  width: 35rem;
+  display: inline;
+  padding: 0;
+}
+
+.prev, .next {
+  float: left;
+  position: relative;
+  margin: 22% -5%;
+  width: 6%;
+  outline: 0;
+}
+
+.next {
+  float: right;
+}
+
 @keyframes pop {
 0%{transform: scale(1, 1);}
 100%{transform: scale(1.2, 1.2);}
 }
 
-@media screen and (min-height:1100px) {
+@media screen and (orientation: portrait) {
   html {
     width: 100%;
     background-size: 300% auto;
@@ -239,8 +295,10 @@ header h1 {
     margin-bottom: 10px;
   }
   .content {
-    width: 80%;
+    width: 85%;
+    height: max-content;
     margin: 10% auto;
+    position: relative;
   }
   #click {
     position: relative;
@@ -249,5 +307,40 @@ header h1 {
   .description {
     color: white;
     font-size: 1rem;
+  }
+  figure {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  div.button-container {
+    display: none;
+  }
+  div.likes-container {
+    position: static;
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+  }
+  ul.slider {
+    position: static;
+    display: inline;
+    margin: auto;
+    padding: auto;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  li.item {
+    width: 35rem;
+    display: inline;
+    padding: 0;
+  }
+  .prev, .next {
+    display: none;
+  }
+  #likescontent {
+    margin: auto;
+    height: fit-content;
   }
 }
