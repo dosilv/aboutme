@@ -116,17 +116,14 @@
     <aside>
     </aside>
     <footer>
+    <div id="colors">
+    <p>Q. Which color do you like?</p>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    </div>
+    <script src="index.js"></script>
     </footer>
-    <script type="text/javascript">
-      let i = 0;
-      function seePrev(){
-        if(i>0) {i -= 1}
-        document.querySelector('ul.slider').style.left = -(100*i)+'%';
-      }
-      function seeNext(){
-        if(i<=1) {i += 1}
-        document.querySelector('ul.slider').style.left = -(100*i)+'%';
-      }
-    </script>
   </body>
 </html>

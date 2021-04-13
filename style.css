@@ -24,7 +24,6 @@ header h1 {
   font-size: 3.2em;
   color: #eba196;
   text-shadow: 0.15rem 0.1rem 0 slategrey;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -254,6 +253,44 @@ li.item {
 
 .next {
   float: right;
+}
+
+#colors {
+  float: right;
+  margin-top: 10px;
+}
+
+#colors p {
+  display: inline;
+  color: rgb(59, 59, 59);
+  position: relative;
+  top: -3px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 2px;
+  border: 1px outset wheat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot:nth-child(2) {
+  background-color: #eba196;
+}
+
+.dot:nth-child(3) {
+  background-color: rgb(200, 185, 207);
+}
+
+.dot:nth-child(4) {
+  background-color: rgb(155, 194, 160);
+}
+
+.dot:nth-child(5) {
+  background-color: rgb(133, 191, 206);
 }
 
 @keyframes pop {
