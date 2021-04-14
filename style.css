@@ -380,4 +380,9 @@ li.item {
     margin: auto;
     height: fit-content;
   }
+  
+  #colors {
+    position: relative;
+    top: -30px;
+  }
 }
